@@ -9,18 +9,13 @@
 <body>
     <h1>Weather App</h1>
     <form id="city-input">
-        <input type="text" id="city" placeholder="Enter City Name">
-        <button><span class="material-symbols-outlined">search</span></button>
+        <input type="text" id="cityInput" placeholder="Enter City Name">
+        <button id="submitBtn"><span class="material-symbols-outlined">search</span></button>
     </form>
-    <p class="test">test</p>
-    <div id="content">
-        <h3 id="name"></h3>
-        <p id="temperature"></p>
-        <hr>
-        <div>
-            <img id="icon" alt="weather image">
-        </div>
-        <p id="description"></p>
+    <div class="weather-container" id="weatherInfo">
+        <p><strong>Location:<span id="location">-</span></strong></p>
+        <p><strong>Temperature:</strong><span id="temperature">-</span></p>
+        <p><strong>Description:</strong><span id="description">-</span></p>
     </div>
     <script src="index.js"></script>
 </body>
