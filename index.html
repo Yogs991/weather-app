@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Weather App</h1>
-    <form id="city-input">
-        <input type="text" id="cityInput" placeholder="Enter City Name">
-        <button id="submitBtn"><span class="material-symbols-outlined">search</span></button>
-    </form>
-    <div class="weather-container" id="weatherInfo">
-        <p><strong>Location:<span id="location">-</span></strong></p>
-        <p><strong>Temperature:</strong><span id="temperature">-</span></p>
-        <p><strong>Description:</strong><span id="description">-</span></p>
+    <div class="weather-container">
+        <h1>Weather App</h1>
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Enter city">
+            <button id="search-btn"><span class="material-symbols-outlined">search</span></button>
+        </div>
+        <div class="weather-info">
+            <h2 id="city">Athens</h2>
+            <div id="icon">☀️</div>
+            <div id="temperature">50F</div>
+            <div id="description">clear-night</div>
+            <div id="date">10:50:00</div>
+            <div id="humidity"><span class="material-symbols-outlined">humidity_high</span>70%</div>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>
